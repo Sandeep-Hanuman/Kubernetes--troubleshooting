@@ -5,8 +5,11 @@ Solution:
 ✅ Step-by-step fixes for each issue  
 ✅ Pro tips to prevent it in the future  
 Step1: kubectl get pods -n <your namespacename>
+
 Step2: kubectl describe pod <pod-name > -n <namespacename>
+
 Step3: kubectl logs <pod-name> -n <namespacename> --previous
+
 **Common issues for CrshLoopBackOff:**
 Issue: Missing Configs/Secrets:
 Error Example: Crash due to missing environment variable
