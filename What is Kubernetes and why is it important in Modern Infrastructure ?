@@ -1,0 +1,2 @@
+What is Kubernetes and why is it important in Modern Infrastructure ?
+Ans: Kubernetes is an open-source tool used to manage containerized applications. It automates tasks like deploying, scaling, and restarting containers. In modern infrastructure, where apps run in containers like Docker, Kubernetes is needed to handle large numbers of containers efficiently. It ensures high availability, better resource usage, and smooth updates—making it ideal for cloud environments.
