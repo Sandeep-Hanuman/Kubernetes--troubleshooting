@@ -1,9 +1,13 @@
 Kubernetes Pod CrashLoopBackOff? Issue: 
 Solution:
-✅ How to check pod status and logs  
+✅ How to check pod status and logs 
+
 ✅ Common reasons for CrashLoopBackOff OOMKilled, permission issues, missing configs, etc.
+
 ✅ Step-by-step fixes for each issue  
+
 ✅ Pro tips to prevent it in the future  
+
 Step1: kubectl get pods -n <your namespacename>
 
 Step2: kubectl describe pod <pod-name > -n <namespacename>
@@ -22,11 +26,10 @@ Fix: Increase Memory/CPU limits in the deployment YAML
 Command: resources:
            limits:
               cpu: "2"
-              memory: "2Gi"
+              memory: "2Gi
 
 Issue: Application Bug or Wrong command:
 Error Example: command not found or Exec format error.
 Fix: Check your command and args in the deployment YAML
 command :  command: ["/bin/sh", "-c"]
            args: ["echo Hello World"]
-           
