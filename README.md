@@ -18,11 +18,13 @@ Step3: kubectl logs <pod-name> -n <namespacename> --previous
 Issue: Missing Configs/Secrets:
 Error Example: Crash due to missing environment variable
 Fix: Check if necessary ConfigMaps or Secrets are mounted properly.
+
 Command: kubectl get configmap/secret -n <namespace>
 
 Issue: Insufficient Resources
 Error Example: OOMkilled in kubectl describe pod output
 Fix: Increase Memory/CPU limits in the deployment YAML
+
 Command: resources:
            limits:
               cpu: "2"
@@ -31,5 +33,6 @@ Command: resources:
 Issue: Application Bug or Wrong command:
 Error Example: command not found or Exec format error.
 Fix: Check your command and args in the deployment YAML
+
 command :  command: ["/bin/sh", "-c"]
            args: ["echo Hello World"]
